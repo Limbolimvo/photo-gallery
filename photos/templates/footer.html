@@ -1,0 +1,13 @@
+<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+   <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+    {% if user.is_authenticated %}
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="{% url 'photos' %}" class="nav-link px-2 text-body-secondary">Photos</a></li>
+        <li class="nav-item"><a href="{% url 'albums' %}" class="nav-link px-2 text-body-secondary">Albums</a></li>
+        <li class="nav-item"><a href="{% url 'add_photo' %}" class="nav-link px-2 text-body-secondary">Add photo</a></li>
+        <li class="nav-item"><a href="{% url 'create_album' %}" class="nav-link px-2 text-body-secondary">Create album</a></li>
+      </ul>
+    {% endif %}
+  </div>
+</footer>

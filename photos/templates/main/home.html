@@ -1,0 +1,135 @@
+{% extends 'main/base.html' %}
+
+{% block title%}
+Home
+{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    {% if object_list %}
+        <main>
+            <section class="sh-section sh-section-e4ba8213da7e122e6cae6af33046f9f9 fw-main-row sh-section-visibility-everywhere">
+            <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+                <div class="fw-row gx-2">
+                    <div class="sh-column sh-column-88662edba0a348ae1e569a8025785c63 fw-col-xs-12 fw-col-sm-6" style="height: 453.4px;">
+                        <div class="sh-column-wrapper">
+                            <div id="text-block-ecb20ec4fbfdfb0fd7ea4708b9e87fd3" class="sh-text-block">
+                                <p>{{ user.personality }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sh-column sh-column-e5474c3b979ec2c6aabaf59f2e942669 fw-col-xs-12 fw-col-sm-6" style="height: 453.4px;">
+                        <div id="single-image-d8218f9e87bdc1e6c0b706f18d0b0d81" class="sh-single-image   sh- fadeInRight animated" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInRight;">
+                            <div class="sh-element-margin">
+                                <div class="sh-single-image-container">
+                                    {% if user.photo %}
+                                        <img class="sh-image-url" src="{{ user.photo }}" alt="Home2_img_2">
+                                    {% else %}
+                                        <img class="sh-image-url" src="https://jevelin.shufflehound.com/blog1/wp-content/uploads/sites/11/2016/11/3-1024x817.jpg" alt="Home2_img_2">
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="wpb_wrapper">
+                <div class="sh-heading sh-heading-style1" id="heading-HScqr2n3oU">
+                    <h2 class="sh-heading-content size-custom">
+                    <span style="text-align: center;">My latest photos</span>
+                    <span> </span></h2>
+                </div>
+                <style type="text/css">
+                #heading-HScqr2n3oU .sh-heading-content strong,#heading-HScqr2n3oU .sh-heading-additional-text strong {font-weight: 700!important;}#heading-HScqr2n3oU .sh-heading-content {font-size: 48px;line-height: 70px!important;font-weight: 700!important;}            </style>
+                <div id="text-block-5Q13aELGwB" class="sh-text-block">
+                    <p></p>
+                    <p style="text-align: center;">Testing...</p>
+                    <p></p>
+                </div>
+                <style type="text/css">
+                #text-block-5Q13aELGwB {font-size: 17px;}#text-block-5Q13aELGwB a:hover,#text-block-5Q13aELGwB a:focus {color: #f62433;}#text-block-5Q13aELGwB p,#text-block-5Q13aELGwB {line-height: 23px;}#text-block-5Q13aELGwB .drop-cap {font-weight: bold;font-size: 50px;display: block;float: left;margin: 8px 10px 0 0;}            </style>
+                <style media="screen">
+                    @media (max-width: 1025px) {
+                        .sh-empty-space-0BSgvA6HUT {
+                            height: 70px!important;
+                        }
+                    }
+                </style>
+                <div class="sh-empty-space vc_empty_space sh-empty-space-0BSgvA6HUT  " style="height: 140px">
+                    <span class="vc_empty_space_inner"></span>
+                </div>
+                <div id="portfolio-fancy-7bQVAICo9d" class="sh-portfolio-fancy sh-portfolio-fancy-columns5">
+                    <div class="sh-portfolio-fancy-item sh-portfolio-fancy-item-active" id="portfolio-174">
+                        <div class="sh-portfolio-fancy-itemc-container">
+                            <img class="sh-portfolio-img" src="https://jevelin.shufflehound.com/architect/wp-content/uploads/sites/30/2019/03/joel-filipe-9cU_HC5CND8-unsplash5-420x660.jpg" alt="">
+                            <a href="https://jevelin.shufflehound.com/architect/project/central-offices/" class="sh-portfolio-fancy-item-overlay-bg"></a>
+                            <div class="sh-portfolio-fancy-item-overlay">
+                                <div class="sh-portfolio-fancy-item-overlay-container">
+                                    <a href="https://jevelin.shufflehound.com/architect/project/central-offices/" class="sh-portfolio-fancy-item-overlay-title">
+                                        <h3>Central offices</h3>
+                                    </a>
+                                    <div class="sh-portfolio-fancy-item-overlay-categories">
+                                        <a href="https://jevelin.shufflehound.com/architect/portfolio/offices/" class="sh-portfolio-category sh-heading-font">Offices</a>
+                                    </div>
+                                    <a href="https://jevelin.shufflehound.com/architect/wp-content/uploads/sites/30/2019/03/joel-filipe-9cU_HC5CND8-unsplash5-420x660.jpg" data-rel="lightcase:portfolio7bQVAICo9d" class="sh-portfolio-fancy-item-overlay-lightbox">
+                                        <i class="icon icon-size-fullscreen"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style type="text/css">
+                #portfolio-fancy-7bQVAICo9d .sh-portfolio-fancy-item-overlay-bg {background: rgba(132,132,132,0.53);background: -moz-linear-gradient(45deg, rgba(132,132,132,0.53) 0%, rgba(246,36,51,0.48) 100%);background: -webkit-linear-gradient(45deg, rgba(132,132,132,0.53) 0%, rgba(246,36,51,0.48) 100%);background: linear-gradient(45deg, rgba(132,132,132,0.53) 0%, rgba(246,36,51,0.48) 100%);}#portfolio-fancy-7bQVAICo9d .sh-portfolio-fancy-item {padding: 0 3px; margin: 3px 0;}            </style>
+                <style media="screen">
+                    @media (max-width: 1025px) {
+                        .sh-empty-space-syKp1Ccr4V {
+                            height: 80px!important;
+                        }
+                    }
+                </style>
+                <div class="sh-empty-space vc_empty_space sh-empty-space-syKp1Ccr4V  " style="height: 125px">
+                    <span class="vc_empty_space_inner"></span>
+                </div>
+                <div id="button-3fnuej2AzG" class="sh-button-container  sh-button-style-1">
+                    <div class="sh-element-margin">
+                        <a href="{% url 'photos' %}" target="_self" class="sh-button sh-button-xlarge ">
+                            <span class="sh-button-text">View All Photos </span>
+                        </a>
+                    </div>
+                </div>
+                <style type="text/css">
+                #button-3fnuej2AzG .sh-button {line-height: 57px;padding-top: 0; padding-bottom: 0;padding-left: 50px; padding-right: 50px;font-size: 16px;border-radius: 30px;background-color: rgba(63,63,63,0.01);color: #363636;border: 2px solid transparent;border: 2px solid #959595;}#button-3fnuej2AzG {text-align: center;}#button-3fnuej2AzG:not(.sh-button-style-2) .sh-button:hover {background-color: rgba(255,255,255,0.01);color: #f62433;border: 2px solid #f62433;}#button-3fnuej2AzG.sh-button-style-2 .sh-button:after {background-color: rgba(255,255,255,0.01);}#button-3fnuej2AzG.sh-button-style-2 .sh-button:hover {color: #f62433;border: 2px solid #f62433;}@media (max-width: 800px) {#button-3fnuej2AzG {text-align: center;}}            </style>
+                <style type="text/css"> .vc_column_1422796575:not(.vc_parallax):not(.jarallax) { overflow: center!important; position: relative; }</style>
+            </div>
+        </section>
+        </main>
+    {% else %}
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                  <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">You don't have albums...</h1></br>
+                    <p><a href="#" class="btn btn-primary my-2">See only photos NOT in an album</a></p>
+                  </div>
+                </div>
+            </section>
+        </main>
+    {% endif %}
+{% else %}
+    <div class="container-xxl">
+        <div class="py-5 text-center container-fluid">
+            <div class="vc_row wpb_row vc_row-fluid wpb_animate_when_almost_visible wpb_fadeIn fadeIn vc_custom_1567695288018 vc_row_962469702 wpb_start_animation animated">
+                <div class="sh-heading sh-heading-style1" id="heading-OVP30Rev7Y">
+                    <h2 class="sh-heading-content">
+                        <span style="text-align: center;"><strong><em>Login</em></strong> to get</span>
+                        <span style="text-align: center;">my latest updates</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}

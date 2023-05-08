@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+
+{% block title%}
+Photos
+{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <div id="wrapper">
+            <div class="content-container sh-page-layout-full">
+                <div id="content" class="page-content ">
+                    <div class="fw-page-builder-content">
+                        <section class="gallery-block compact-gallery">
+                            <div class="row">
+                                {% for object in object_list %}
+                                    <div class="sh-column sh-column col-xs-10 col-sm-4">
+                                        <div class="sh-portfolio-image">
+                                            <div class="sh-portfolio-image-position">
+                                                <img class="bd-placeholder-img" src="{{ object.photo.url }}">
+                                            </div>
+                                            <a href="#" class="sh-portfolio-overlay sh-portfolio-overlay3">
+                                                <div class="sh-portfolio-overlay3-data">
+                                                    <div class="sh-portfolio-overlay3-title"> {{ object.album }} </div>
+                                                    {{ object.location }}
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <br>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
